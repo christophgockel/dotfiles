@@ -4,6 +4,7 @@ formulae=(
   "caskroom/cask/brew-cask"
   "tmux"
   "zsh"
+  "git"
 )
 
 for formula in ${formulae[@]}
