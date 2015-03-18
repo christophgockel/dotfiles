@@ -19,7 +19,7 @@ git_bundles = [
 require 'fileutils'
 require 'open-uri'
 
-bundles_dir = File.join("~", ".vim", "bundle")
+bundles_dir = File.join(ENV["HOME"], ".vim", "bundle")
 
 FileUtils.cd(bundles_dir)
 
