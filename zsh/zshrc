@@ -11,7 +11,7 @@ unsetopt SHARE_HISTORY
 plugins=(git)
 
 BASE16_SCHEME="default"
-BASE16_SHELL="$HOME/.dotfiles/base16-$BASE16_SCHEME.dark.sh"
+BASE16_SHELL="$HOME/.dotfiles/base16/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 source $BASE16_SHELL
 
@@ -37,6 +37,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
 
 
+alias ll='ls -la'
 alias pip='nocorrect pip'
 alias gs='git status'
 alias gd='git diff'
