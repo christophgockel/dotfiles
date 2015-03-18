@@ -1,0 +1,54 @@
+export ZDOTDIR=$HOME
+
+export TERM='xterm-256color'
+export LANG="en_US.UTF-8"
+export EDITOR=vim
+
+ZSH_THEME="af-magic"
+
+unsetopt SHARE_HISTORY
+
+plugins=(git)
+
+BASE16_SCHEME="default"
+BASE16_SHELL="$HOME/.dotfiles/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+source $BASE16_SHELL
+
+# Customize to your needs...
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:~/bin
+
+export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.1
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
+#export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+export PATH=$PATH:$JAVA_HOME
+
+export TOMCAT_HOME=/Users/christoph/development/apache-tomcat-6.0.29
+export BASEDIR=$TOMCAT_HOME
+export PATH=$PATH:$TOMCAT_HOME
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+#export GOPATH=~/.go
+export PATH=$PATH:$GOPATH/bin
+
+export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
+
+
+alias pip='nocorrect pip'
+alias gs='git status'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gl='git log --graph --decorate --pretty=oneline --abbrev-commit master'
+
+alias tac='tail -r'
+alias pu='vendor/bin/phpunit'
+alias be='bundle exec'
+alias bower=~/node_modules/bower/bin/bower
+alias gradlew='./gradlew'
+
+function mcd() { mkdir -p $1 && cd $1 } # from @garybernhardt
+
