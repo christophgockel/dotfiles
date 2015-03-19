@@ -16,7 +16,6 @@ casks=(
   "the-unarchiver"
   "things"
   "thunderbird"
-  "virtualbox"
   "vlc"
 
   "intellij-idea-ce"
