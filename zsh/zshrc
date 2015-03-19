@@ -32,8 +32,8 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
 
 
-alias ll='ls -lh'
-alias la='ls -lah'
+alias ll='ls -lhG'
+alias la='ls -lahG'
 alias pip='nocorrect pip'
 alias ga='git add'
 alias gs='git status'
