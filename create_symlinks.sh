@@ -9,14 +9,6 @@ else
   echo "Skipping .vimrc"
 fi
 
-if [ ! -f ~/.vim/colors/base16-default.vim ]; then
-  echo "Linking vim color scheme"
-  mkdir -p ~/.vim/colors
-  ln -s $base_dir/base16/base16-default.vim ~/.vim/colors/base16-default.vim
-else
-  echo "Skipping vim color scheme"
-fi
-
 if [ ! -f ~/.zshrc ]; then
   echo "Linking .zshrc"
   ln -s $base_dir/zsh/zshrc ~/.zshrc
