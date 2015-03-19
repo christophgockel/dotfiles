@@ -5,6 +5,7 @@ formulae=(
   "tmux"
   "zsh"
   "git"
+  "maven"
 )
 
 for formula in ${formulae[@]}
