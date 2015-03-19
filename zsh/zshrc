@@ -50,3 +50,19 @@ alias gradlew='./gradlew'
 
 function mcd() { mkdir -p $1 && cd $1 } # from @garybernhardt
 
+
+autoload -U compinit && compinit
+zmodload -i zsh/complist
+
+setopt PROMPT_SUBST
+source ~/.dotfiles/zsh/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+autoload -U colors  && colors
+PROMPT='%F{237}------------------------------------------------------------%f
+%F{033}%~\
+$(__git_ps1 " (%s)") \
+%F{004}%(!.#.»)%f '
+
+RPROMPT=''
+
