@@ -2,14 +2,14 @@
 # source: http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/
 
 git_bundles = [
-  "git://github.com/kien/ctrlp.vim.git",
-  "git://github.com/scrooloose/nerdtree.git",
-  "git://github.com/guns/vim-clojure-static.git",
-  "git://github.com/kchmck/vim-coffee-script.git",
-  "git://github.com/tpope/vim-endwise.git",
-  "git://github.com/fatih/vim-go.git",
-  "git://github.com/thoughtbot/vim-rspec.git",
-  "git://github.com/chriskempson/base16-vim.git"
+  "https://github.com/kien/ctrlp.vim.git",
+  "https://github.com/scrooloose/nerdtree.git",
+  "https://github.com/guns/vim-clojure-static.git",
+  "https://github.com/kchmck/vim-coffee-script.git",
+  "https://github.com/tpope/vim-endwise.git",
+  "https://github.com/fatih/vim-go.git",
+  "https://github.com/thoughtbot/vim-rspec.git",
+  "https://github.com/chriskempson/base16-vim.git"
 ]
 
 #vim_org_scripts = [
