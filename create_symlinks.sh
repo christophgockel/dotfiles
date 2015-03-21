@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-base_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+base_dir=$(dirname "$PWD/$0")
 
 if [ ! -f ~/.vimrc ]; then
   echo "Linking .vimrc"
