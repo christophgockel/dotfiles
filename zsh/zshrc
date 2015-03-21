@@ -18,8 +18,10 @@ source $BASE16_SHELL
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:~/bin
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
-export PATH=$PATH:$JAVA_HOME
+if [[ $(uname) == "Darwin" ]]; then
+  export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+  export PATH=$PATH:$JAVA_HOME
+fi
 
 export TOMCAT_HOME=/Users/christoph/development/apache-tomcat-6.0.29
 export BASEDIR=$TOMCAT_HOME
@@ -32,8 +34,13 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
 
 
-alias ll='ls -lhG'
-alias la='ls -lahG'
+if [[ $(uname) == "Darwin" ]]; then
+  alias ll='ls -lhG'
+  alias la='ls -lahG'
+else
+  alias ll='ls -lh --color=auto'
+  alias la='ls -lah --color=auto'
+fi
 alias pip='nocorrect pip'
 alias ga='git add'
 alias gs='git status'
