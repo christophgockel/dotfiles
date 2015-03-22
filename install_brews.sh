@@ -6,6 +6,8 @@ formulae=(
   "zsh"
   "git"
   "maven"
+  "chruby"
+  "ruby-build"
 )
 
 for formula in ${formulae[@]}
