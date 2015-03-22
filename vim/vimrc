@@ -162,7 +162,16 @@ augroup END
 
 "Rename tabs to show tab# and # of viewports
 if exists("+showtabline")
-  function! MyTabLine()
+  hi TabLineFill  ctermfg=20 ctermbg=19
+  hi TabLine      ctermfg=20 ctermbg=18
+  hi TabLineSel   ctermfg=15 ctermbg=33
+
+  hi TabNum       ctermfg=20 ctermbg=18
+  hi TabNumSel    ctermfg=15 ctermbg=33
+  hi TabWinNum    ctermfg=20 ctermbg=18
+  hi TabWinNumSel ctermfg=15 ctermbg=33
+
+  function! TabLineWithIndexAndNumberOfSplits()
     let s = ''
     let wn = ''
     let t = tabpagenr()
@@ -172,18 +181,17 @@ if exists("+showtabline")
       let winnr = tabpagewinnr(i)
       let s .= '%' . i . 'T'
       let s .= (i == t ? '%1*' : '%2*')
-      let s .= ' '
       let wn = tabpagewinnr(i,'$')
 
       let s .= (i== t ? '%#TabNumSel#' : '%#TabNum#')
-      let s .= i
+      let s .= ' ' . i
       if tabpagewinnr(i,'$') > 1
         let s .= '.'
         let s .= (i== t ? '%#TabWinNumSel#' : '%#TabWinNum#')
         let s .= (tabpagewinnr(i,'$') > 1 ? wn : '')
       end
 
-      let s .= ' %*'
+      let s .= '%*'
       let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
       let bufnr = buflist[winnr - 1]
       let file = bufname(bufnr)
@@ -198,7 +206,7 @@ if exists("+showtabline")
       if file == ''
         let file = '[No Name]'
       endif
-      let s .= file
+      let s .= ' ' . file . ' '
       let s .= (i == t ? '%m' : '')
       let i = i + 1
     endwhile
@@ -206,5 +214,5 @@ if exists("+showtabline")
     return s
   endfunction
 "  set stal=2
-  set tabline=%!MyTabLine()
+  set tabline=%!TabLineWithIndexAndNumberOfSplits()
 endif
