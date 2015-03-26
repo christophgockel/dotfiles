@@ -23,3 +23,10 @@ else
   echo "Skipping .tmux.conf"
 fi
 
+if [ ! -f $HOME/.gitconfig ]; then
+  echo "Linking .gitconfig"
+  ln -s $base_dir/git/gitconfig $HOME/.gitconfig
+else
+  echo "Skipping .gitconfig"
+fi
+
