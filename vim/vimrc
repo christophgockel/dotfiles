@@ -75,6 +75,7 @@ set splitright
 
 " searching
 set hlsearch
+set incsearch
 nnoremap <silent> <leader><space> :nohl<CR>
 
 " tabs
