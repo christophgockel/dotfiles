@@ -7,6 +7,12 @@ export EDITOR=vim
 ZSH_THEME="af-magic"
 
 unsetopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+export HISTSIZE=2000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
 
 plugins=(git)
 
@@ -15,7 +21,6 @@ BASE16_SHELL="$HOME/.dotfiles/base16/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 source $BASE16_SHELL
 
-# Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:~/bin
 
 if [[ $(uname) == "Darwin" ]]; then
