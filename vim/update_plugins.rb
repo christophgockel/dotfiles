@@ -9,7 +9,8 @@ git_bundles = [
   "https://github.com/tpope/vim-endwise.git",
   "https://github.com/fatih/vim-go.git",
   "https://github.com/thoughtbot/vim-rspec.git",
-  "https://github.com/chriskempson/base16-vim.git"
+  "https://github.com/chriskempson/base16-vim.git",
+  "https://github.com/elixir-lang/vim-elixir.git"
 ]
 
 #vim_org_scripts = [
