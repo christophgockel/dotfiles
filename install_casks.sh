@@ -21,7 +21,6 @@ casks=(
   "intellij-idea-ce"
   "sequel-pro"
   "cyberduck"
-  "sketch"
   "sublime-text"
 )
 
