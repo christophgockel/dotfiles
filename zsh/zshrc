@@ -56,7 +56,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
-alias gl='git log --graph --decorate --pretty=oneline --abbrev-commit master'
+alias gl='git log --graph --decorate --pretty=oneline --abbrev-commit'
 
 alias tac='tail -r'
 alias pu='vendor/bin/phpunit'
