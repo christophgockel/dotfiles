@@ -18,7 +18,7 @@ set autoread
 set t_Co=256
 
 set ruler
-set so=7
+set scrolloff=7
 set cmdheight=2
 
 set hid
@@ -51,9 +51,9 @@ set encoding=utf8
 
 set expandtab
 set smarttab
-set ai "auto indent
-set si "smart indent
-set wrap "wrap lines
+set autoindent
+set smartindent
+set wrap
 set tabstop=2
 set shiftwidth=2
 
