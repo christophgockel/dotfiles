@@ -91,6 +91,7 @@ bindkey '^P' up-history
 bindkey '^N' down-history
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
+bindkey "^[[3~" delete-char
 
 if test -n "$(find $HOME/.dotfiles/zsh -maxdepth 1 -name 'private*' -print -quit)"; then
   for private_environment in $HOME/.dotfiles/zsh/private*; do
