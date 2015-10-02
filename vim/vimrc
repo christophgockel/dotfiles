@@ -63,8 +63,8 @@ let mapleader = ","
 let g:mapleader = ","
 
 
-" convenience
-nmap <leader>w :w!<cr>
+" clean trailing whitespace
+nnoremap <leader>w mz:%s/\s\+$//<cr>:let @/=''<cr>`z
 nmap <leader><leader> :NERDTreeToggle<CR>
 nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>nf :NERDTreeFind<CR>
@@ -149,10 +149,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-" automatically strip trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
-
 
 " fixing vim-clojure-static indentation for speclj
 augroup CustomEvents
