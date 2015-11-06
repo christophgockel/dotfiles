@@ -16,3 +16,5 @@
   default = tracking
 [pull]
   rebase = true
+[alias]
+  prune-branches = fetch origin --prune
