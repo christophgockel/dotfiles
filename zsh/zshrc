@@ -46,6 +46,7 @@ export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
 if [[ $(uname) == "Darwin" ]]; then
   alias ll='ls -lhG'
   alias la='ls -lahG'
+  alias open='reattach-to-user-namespace open'
 else
   alias ll='ls -lh --color=auto'
   alias la='ls -lah --color=auto'

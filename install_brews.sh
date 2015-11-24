@@ -3,6 +3,7 @@
 formulae=(
   "caskroom/cask/brew-cask"
   "tmux"
+  "reattach-to-user-namespace"
   "zsh"
   "git"
   "maven"
