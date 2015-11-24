@@ -1,20 +1,28 @@
 [user]
   name = Christoph Gockel
   email = github@christophgockel.de
+
 [github]
   user = ChristophGockel
+
 [core]
   editor = vim
+
 [color]
   ui = true
+
+[push]
+  default = tracking
+
+[pull]
+  rebase = true
+
 [alias]
   br = branch
   co = checkout
   st = status
   staged = diff --staged
-[push]
-  default = tracking
-[pull]
-  rebase = true
-[alias]
   prune-branches = fetch origin --prune
+  l  = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
+  ld = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short --since=1.days
+  lw = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short --since=1.weeks
