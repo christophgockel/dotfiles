@@ -24,7 +24,9 @@ source $BASE16_SHELL
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:~/bin
 
 if [[ $(uname) == "Darwin" ]]; then
-  export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+  alias java7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
+  alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
+  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
   export PATH=$PATH:$JAVA_HOME
 
   source /usr/local/opt/chruby/share/chruby/chruby.sh

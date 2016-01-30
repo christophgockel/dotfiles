@@ -1,0 +1,2 @@
+echo <<LOGO
+LOGO
