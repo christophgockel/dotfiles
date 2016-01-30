@@ -40,6 +40,7 @@ export TOMCAT_HOME=/Users/christoph/development/apache-tomcat-6.0.29
 export BASEDIR=$TOMCAT_HOME
 export PATH=$PATH:$TOMCAT_HOME
 
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 export PATH=$PATH:$GOPATH/bin
 
 export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
