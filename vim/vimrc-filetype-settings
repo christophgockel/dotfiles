@@ -1,0 +1,6 @@
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType ruby set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType php set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType clojure set tabstop=2|set shiftwidth=2|set expandtab

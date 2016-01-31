@@ -1,0 +1,3 @@
+nmap <leader><leader> :NERDTreeToggle<CR>
+nmap <leader>nt :NERDTreeToggle<CR>
+nmap <leader>nf :NERDTreeFind<CR>

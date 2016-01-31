@@ -1,0 +1,5 @@
+" fixing vim-clojure-static indentation for speclj
+augroup CustomEvents
+  autocmd!
+  autocmd FileType clojure setlocal lispwords+=describe,it,context,around,before,after,before-all,before-after
+augroup END
