@@ -102,3 +102,6 @@ if test -n "$(find $HOME/.dotfiles/zsh -maxdepth 1 -name 'private*' -print -quit
     source $private_environment
   done
 fi
+
+stty -ixon #disables software control flow (ctrl+s)
+
