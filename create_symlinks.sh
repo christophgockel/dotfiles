@@ -30,3 +30,9 @@ else
   echo "Skipping .gitconfig"
 fi
 
+if [ ! -f $HOME/.vim/colors/base16-default-dark.vim ]; then
+  echo "Linking vim colors"
+  ln -s $HOME/.vim/bundle/base16-vim/colors/* $HOME/.vim/colors/
+else
+  echo "Skipping vim colors"
+fi
