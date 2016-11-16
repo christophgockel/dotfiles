@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -euo pipefail
 
 version="2.2.1"
 

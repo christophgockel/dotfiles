@@ -1,0 +1,22 @@
+#!/bin/sh
+set -euo pipefail
+
+local_base_directory=/Users/christoph/development/project/directory
+vagrant_base_directory=/var/www/html
+vagrant_ip=192.168.2.200
+vagrant_user=vagrant
+vagrant_password=vagrant
+
+file_to_upload=$1
+relative_file_path=${file_to_upload#$local_base_directory}
+
+expect <<EOF
+  spawn sftp $vagrant_user@$vagrant_ip
+  expect "${vagrant_user}@${vagrant_ip}'s password:"
+  send "$vagrant_password\r"
+  expect "sftp>"
+  send "put $file_to_upload $vagrant_base_directory${relative_file_path}\r"
+  send "quit\r"
+  expect eof
+EOF
+

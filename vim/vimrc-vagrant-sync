@@ -1,0 +1,11 @@
+function! VagrantSync()
+    silent !clear
+
+    let file = expand("%:p")
+
+    execute "!" . getcwd() . "/.vagrant-sync " . file
+endfunction
+
+map <leader>vs :call VagrantSync()<CR>
+
+" autocmd BufWritePost * :call VagrantSync()
