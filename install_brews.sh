@@ -9,6 +9,7 @@ formulae=(
   "maven"
   "chruby"
   "ruby-build"
+  "the_silver_searcher"
 )
 
 for formula in ${formulae[@]}

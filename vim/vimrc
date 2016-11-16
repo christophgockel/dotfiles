@@ -2,7 +2,8 @@ set nocompatible
 filetype off
 
 execute pathogen#infect()
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set rtp+=~/.fzf
+
 
 set number       " line numbers
 set history=1000 " history of ':' commands and searches, etc.
@@ -132,4 +133,5 @@ exec "source " . s:config_path . '/vimrc-tabs'
 exec "source " . s:config_path . '/vimrc-vim-clojure-static'
 exec "source " . s:config_path . '/vimrc-nerdtree'
 exec "source " . s:config_path . '/vimrc-filetype-settings'
+exec "source " . s:config_path . '/vimrc-fzf'
 

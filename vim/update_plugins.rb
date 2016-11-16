@@ -2,7 +2,7 @@
 # source: http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/
 
 git_bundles = [
-  "https://github.com/kien/ctrlp.vim.git",
+  "https://github.com/junegunn/fzf.vim.git",
   "https://github.com/scrooloose/nerdtree.git",
   "https://github.com/guns/vim-clojure-static.git",
   "https://github.com/kchmck/vim-coffee-script.git",
