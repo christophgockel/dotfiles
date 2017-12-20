@@ -45,7 +45,9 @@ set tm=500
 
 syntax enable
 let base16colorspace=256
-colorscheme base16-default-dark
+if filereadable(expand("~/.vimrc_background"))
+  source ~/.vimrc_background
+endif
 
 set encoding=utf8
 
