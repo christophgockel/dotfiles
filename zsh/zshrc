@@ -24,7 +24,8 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bi
 if [[ $(uname) == "Darwin" ]]; then
   alias java7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
   alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
-  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+  alias java9='export JAVA_HOME=$(/usr/libexec/java_home -v 9)'
+  export JAVA_HOME=$(/usr/libexec/java_home -v 9)
   export PATH=$PATH:$JAVA_HOME
 
   source /usr/local/opt/chruby/share/chruby/chruby.sh
