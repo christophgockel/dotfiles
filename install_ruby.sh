@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
 set -euo pipefail
 
-version="2.2.1"
+version="2.4.3"
 
-ruby-build $version ~/.rubies/$version
+ruby-install $version
+source ~/.zshrc
 chruby $version
 
 gem install bundler

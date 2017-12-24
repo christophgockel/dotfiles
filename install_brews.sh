@@ -9,7 +9,7 @@ formulae=(
   "git"
   "maven"
   "chruby"
-  "ruby-build"
+  "ruby-install"
   "the_silver_searcher"
 )
 
