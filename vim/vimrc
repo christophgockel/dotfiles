@@ -17,6 +17,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'elixir-lang/vim-elixir'
   Plug 'airblade/vim-gitgutter'
   Plug 'ElmCast/elm-vim'
+  Plug 'w0rp/ale'
 call plug#end()
 
 set rtp+=~/.fzf
