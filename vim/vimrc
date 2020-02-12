@@ -18,6 +18,10 @@ call plug#begin("~/.vim/plugged")
   Plug 'airblade/vim-gitgutter'
   Plug 'ElmCast/elm-vim'
   Plug 'w0rp/ale'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'sbdchd/neoformat'
+  Plug 'felipesere/search'
+  Plug 'rust-lang/rust.vim'
 call plug#end()
 
 set rtp+=~/.fzf
@@ -162,4 +166,6 @@ exec "source " . s:config_path . '/vimrc-nerdtree'
 exec "source " . s:config_path . '/vimrc-filetype-settings'
 exec "source " . s:config_path . '/vimrc-fzf'
 exec "source " . s:config_path . '/vimrc-vagrant-sync'
+
+let g:rustfmt_autosave = 1
 
