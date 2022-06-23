@@ -59,6 +59,21 @@ is used to create symlinks for vim, zsh and tmux configuration files.
 Some languages and tools need additional steps to finish their installation.
 
 
+#### Java
+
+`jenv` is used as a version manager.
+
+In order to install JDKs additional commands need to be executed:
+
+```
+brew install openjdk@17
+
+jenv add /opt/homebrew/opt/openjdk@17
+
+jenv global 17.0
+```
+
+
 #### Ruby
 
 `chruby` is used as a version manager and `ruby-install` is used to install new versions of Ruby.

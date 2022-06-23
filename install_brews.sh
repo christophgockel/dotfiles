@@ -11,6 +11,7 @@ formulae=(
   "ruby-install"
   "the_silver_searcher"
   "fzf"
+  "jenv"
 )
 
 for formula in ${formulae[@]}
