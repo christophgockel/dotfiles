@@ -2,7 +2,6 @@
 set -euo pipefail
 
 formulae=(
-  "caskroom/cask/brew-cask"
   "tmux"
   "reattach-to-user-namespace"
   "zsh"
@@ -11,6 +10,7 @@ formulae=(
   "chruby"
   "ruby-install"
   "the_silver_searcher"
+  "fzf"
 )
 
 for formula in ${formulae[@]}
