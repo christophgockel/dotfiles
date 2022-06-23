@@ -39,6 +39,7 @@ chruby ruby
 
 eval "$(jenv init -)"
 
+eval "$(fnm env --use-on-cd)"
 
 
 if [[ $(uname) == "Darwin" ]]; then

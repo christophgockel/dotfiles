@@ -74,6 +74,18 @@ jenv global 17.0
 ```
 
 
+#### JavaScript
+
+`fnm` is used as a version manager.
+
+In order to install JDKs additional commands need to be executed:
+
+```
+fnm install v16.15.1
+fnm use v16.15.1
+```
+
+
 #### Ruby
 
 `chruby` is used as a version manager and `ruby-install` is used to install new versions of Ruby.
