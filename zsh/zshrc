@@ -19,7 +19,13 @@ plugins=(git)
 BASE16_SHELL=$HOME/.dotfiles/base16/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:~/bin
+export PATH="$PATH:/bin"
+export PATH="$PATH:/sbin"
+export PATH="$PATH:/usr/bin"
+export PATH="$PATH:/usr/sbin"
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:/opt/homebrew/sbin"
+export PATH="$PATH:~/bin"
 
 if [[ $(uname) == "Darwin" ]]; then
   alias java7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
@@ -37,14 +43,7 @@ fi
 
 chruby ruby
 
-export TOMCAT_HOME=/Users/christoph/development/apache-tomcat-6.0.29
-export BASEDIR=$TOMCAT_HOME
-export PATH=$PATH:$TOMCAT_HOME
 
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-export PATH=$PATH:$GOPATH/bin
-
-export PATH="$PATH:/usr/local/packer_0.7.5_darwin_amd64"
 
 
 if [[ $(uname) == "Darwin" ]]; then
@@ -109,3 +108,4 @@ stty -ixon #disables software control flow (ctrl+s)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
