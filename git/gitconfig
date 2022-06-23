@@ -20,6 +20,9 @@
 [pull]
   rebase = true
 
+[apply]
+  whitespace = nowarn
+
 [alias]
   br = branch
   co = checkout
