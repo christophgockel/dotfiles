@@ -40,9 +40,31 @@ One manual step for iTerm is needed: Import the desired color scheme via
 
 (don't forget to activate it after the import)
 
+And make sure to run this command to enable the specific color scheme in the terminal:
+
+```
+base16_default-dark
+```
+
 
 ### Configuration Files
 ```
 sh create_symlinks.sh
 ```
 is used to create symlinks for vim, zsh and tmux configuration files.
+
+
+### Additional Steps
+
+Some languages and tools need additional steps to finish their installation.
+
+
+#### Ruby
+
+`chruby` is used as a version manager and `ruby-install` is used to install new versions of Ruby.
+
+```
+ruby-install ruby 3.1.2
+chruby ruby
+```
+

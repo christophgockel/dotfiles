@@ -34,8 +34,8 @@ if [[ $(uname) == "Darwin" ]]; then
   export JAVA_HOME=$(/usr/libexec/java_home -v 9)
   export PATH=$PATH:$JAVA_HOME
 
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
+  source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+  source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 else
   source /usr/local/share/chruby/chruby.sh
   source /usr/local/share/chruby/auto.sh
