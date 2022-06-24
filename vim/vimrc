@@ -22,6 +22,9 @@ call plug#begin("~/.vim/plugged")
   Plug 'sbdchd/neoformat'
   Plug 'felipesere/search'
   Plug 'rust-lang/rust.vim'
+  Plug 'peitalin/vim-jsx-typescript'
+  Plug 'neovimhaskell/haskell-vim'
+  Plug 'rhysd/git-messenger.vim'
 call plug#end()
 
 set rtp+=~/.fzf
