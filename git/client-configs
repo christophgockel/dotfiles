@@ -1,0 +1,7 @@
+# This file includes additional `.gitconfig` files that can be client specific.
+# Git will then automatically use this updated configuraion when being executed
+# from within that directory.
+
+#[includeIf "gitdir:~/development/some-directory/"]
+#  path = ~/development/some-directory/.gitconfig
+

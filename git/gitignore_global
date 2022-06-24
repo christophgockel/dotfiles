@@ -1,1 +1,4 @@
 .vagrant-sync
+.DS_Store
+.idea
+

@@ -10,6 +10,7 @@
 
 [core]
   editor = vim
+  excludesFile = ~/.gitignore_global
 
 [color]
   ui = true
@@ -33,4 +34,7 @@
   ld = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short --since=1.days
   lw = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short --since=1.weeks
   cleanup = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+
+[include]
+  path = ~/.dotfiles/git/client-configs
 
