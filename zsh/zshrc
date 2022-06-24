@@ -60,7 +60,7 @@ alias gl='git log --graph --decorate --pretty=oneline --abbrev-commit'
 alias tac='tail -r'
 alias pu='vendor/bin/phpunit'
 alias be='bundle exec'
-alias gradlew='./gradlew'
+alias gw='./gradlew'
 alias whichport='lsof -i ":$1" | grep LISTEN'
 
 function mcd() { mkdir -p $1 && cd $1 } # from @garybernhardt
