@@ -59,6 +59,13 @@ is used to create symlinks for vim, zsh and tmux configuration files.
 Some languages and tools need additional steps to finish their installation.
 
 
+#### Hide Files on Desktop
+```
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+```
+
+
 #### Java
 
 `jenv` is used as a version manager.
