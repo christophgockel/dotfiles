@@ -1,3 +1,6 @@
+# Uncomment the next and very last line temporarily when trying to locate problems during shell initialisation.
+#zmodload zsh/zprof
+
 export ZDOTDIR=$HOME
 
 export TERM='xterm-256color'
@@ -104,4 +107,6 @@ stty -ixon #disables software control flow (ctrl+s)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+#zprof
 
