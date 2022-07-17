@@ -13,7 +13,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'kchmck/vim-coffee-script'
   Plug 'tpope/vim-endwise'
   Plug 'fatih/vim-go'
-  Plug 'chriskempson/base16-vim'
+  Plug 'base16-project/base16-vim'
   Plug 'elixir-lang/vim-elixir'
   Plug 'airblade/vim-gitgutter'
   Plug 'ElmCast/elm-vim'
@@ -69,10 +69,7 @@ set t_vb=        " no sounds.
 set tm=500
 
 syntax enable
-let base16colorspace=256
-if filereadable(expand("~/.vimrc_background"))
-  source ~/.vimrc_background
-endif
+colorscheme base16-default-dark
 
 set encoding=utf8
 
