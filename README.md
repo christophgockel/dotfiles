@@ -102,3 +102,15 @@ ruby-install ruby 3.1.2
 chruby ruby
 ```
 
+
+#### FZF
+
+`fzf` requires an additional installation step to fully hook it up with the shell:
+
+```
+/opt/homebrew/opt/fzf/install
+```
+
+It will ask if it should update the `.zshrc` which you can decline as the necessary steps are already in there.
+But keep an eye out if they need updating.
+
