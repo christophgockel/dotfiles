@@ -33,6 +33,9 @@ export PATH="$PATH:/opt/homebrew/sbin"
 export PATH="$PATH:~/bin"
 
 if [[ $(uname) == "Darwin" ]]; then
+
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
   source /opt/homebrew/opt/chruby/share/chruby/auto.sh
   source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 else
