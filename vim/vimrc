@@ -69,6 +69,7 @@ set t_vb=        " no sounds.
 set tm=500
 
 syntax enable
+let base16colorspace=256
 colorscheme base16-default-dark
 
 set encoding=utf8
