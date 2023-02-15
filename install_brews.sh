@@ -6,13 +6,11 @@ formulae=(
   "reattach-to-user-namespace"
   "zsh"
   "git"
-  "maven"
   "chruby"
   "ruby-install"
   "the_silver_searcher"
   "fzf"
   "fnm"
-  "jenv"
 )
 
 for formula in ${formulae[@]}

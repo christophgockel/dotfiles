@@ -45,7 +45,7 @@ fi
 
 chruby ruby
 
-eval "$(jenv init -)"
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 eval "$(fnm env --use-on-cd)"
 

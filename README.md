@@ -68,16 +68,19 @@ killall Finder
 
 #### Java
 
-`jenv` is used as a version manager.
-
-In order to install JDKs additional commands need to be executed:
+`sdkman` is used as a version manager.
+See [its website](https://sdkman.io) for details to install it.
+At the time of writing it consisted of running the following command:
 
 ```
-brew install openjdk@17
+curl -s "https://get.sdkman.io" | bash
+```
 
-jenv add /opt/homebrew/opt/openjdk@17
+In order to install Maven and JDKs additional commands need to be executed:
 
-jenv global 17.0
+```
+sdk install java 17.0.5-amzn
+sdk install maven 3.8.6
 ```
 
 
