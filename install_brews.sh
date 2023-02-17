@@ -6,6 +6,7 @@ formulae=(
   "reattach-to-user-namespace"
   "zsh"
   "git"
+  "git-lfs"
   "chruby"
   "ruby-install"
   "the_silver_searcher"
