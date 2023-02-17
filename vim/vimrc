@@ -25,6 +25,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'neovimhaskell/haskell-vim'
   Plug 'rhysd/git-messenger.vim'
+  Plug 'smerrill/vcl-vim-plugin'
 call plug#end()
 
 set rtp+=~/.fzf
