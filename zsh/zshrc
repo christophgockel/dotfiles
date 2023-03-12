@@ -24,6 +24,8 @@ BASE16_SHELL_PATH="$HOME/.dotfiles/base16/base16-shell"
   [ -s "$BASE16_SHELL_PATH/profile_helper.sh" ] && \
     source "$BASE16_SHELL_PATH/profile_helper.sh"
 
+base16_default-dark
+
 export PATH="$PATH:/bin"
 export PATH="$PATH:/sbin"
 export PATH="$PATH:/usr/bin"

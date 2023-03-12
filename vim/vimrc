@@ -13,7 +13,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'kchmck/vim-coffee-script'
   Plug 'tpope/vim-endwise'
   Plug 'fatih/vim-go'
-  Plug 'base16-project/base16-vim'
+  Plug 'chriskempson/base16-vim'
   Plug 'elixir-lang/vim-elixir'
   Plug 'airblade/vim-gitgutter'
   Plug 'ElmCast/elm-vim'
