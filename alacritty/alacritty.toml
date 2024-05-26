@@ -1,0 +1,9 @@
+[font]
+normal = { family = "Monaco", style = "Regular" }
+size = 12
+
+[window]
+decorations = "Buttonless"
+option_as_alt = "Both"
+padding = { x = 4, y = 4 }
+

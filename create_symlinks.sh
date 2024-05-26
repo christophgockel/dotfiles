@@ -17,6 +17,7 @@ create_link_if_needed() {
 }
 
 create_link_if_needed "$base_dir/vim/vimrc" "$HOME/.vimrc"
+create_link_if_needed "$base_dir/alacritty/alacritty.toml" "$HOME/.alacritty.toml"
 create_link_if_needed "$base_dir/zsh/zshrc" "$HOME/.zshrc"
 create_link_if_needed "$base_dir/tmux/tmux.conf" "$HOME/.tmux.conf"
 create_link_if_needed "$base_dir/git/gitconfig" "$HOME/.gitconfig"

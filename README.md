@@ -29,18 +29,14 @@ To install even more applications.
 ### Base16 Colors
 
 To set up the [base16](https://github.com/chriskempson/base16) colors run
+
 ```
 sh base16/install.sh
 ```
-This clones the needed repos for zsh and iTerm colors.
 
-One manual step for iTerm is needed: Import the desired color scheme via
+This clones the needed repo for theme colors in zsh.
 
-`Preferences > Profiles > Colors > Color Presets > Import...`
-
-(don't forget to activate it after the import)
-
-And make sure to run this command to enable the specific color scheme in the terminal:
+Once done, make sure to run this command to enable the specific color scheme in the terminal:
 
 ```
 base16_default-dark
@@ -63,6 +59,14 @@ Some languages and tools need additional steps to finish their installation.
 ```
 defaults write com.apple.finder CreateDesktop false
 killall Finder
+```
+
+#### Better/Thinner Font Rendering in Alacritty
+
+From https://github.com/alacritty/alacritty/issues/4616#issuecomment-1236413444
+
+```
+defaults write org.alacritty AppleFontSmoothing -int 0
 ```
 
 

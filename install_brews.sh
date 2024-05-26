@@ -2,6 +2,7 @@
 set -euo pipefail
 
 formulae=(
+  "alacritty"
   "tmux"
   "reattach-to-user-namespace"
   "zsh"

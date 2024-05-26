@@ -10,7 +10,6 @@ casks=(
   "google-chrome"
   "firefox"
 
-  "iterm2"
   "alfred"
   "slack"
   "caffeine"
