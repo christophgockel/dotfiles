@@ -30,6 +30,7 @@
   co = checkout
   st = status
   staged = diff --staged
+  unstage = restore --staged .
   prune-branches = fetch origin --prune
   l  = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
   ld = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short --since=1.days
